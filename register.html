@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Register</title>
+    <script src="js/register.js"></script>
+    <style type="text/css">
+    body{
+        background: #f3f3f3;
+    }
+    div{
+        margin: 20px 124px; 
+        background: #fff;
+        width: 1000px;
+        height: 800px;
+    }
+    input{
+        color: #ccc;
+        width: 400px;
+        height: 30px;
+        font-size: 24px;
+    }
+    div span{
+            margin-left: 248px;
+    }
+    </style>
+</head>
+<body onload="SubmitCheck()">
+    <div style="margin: 0 auto;">
+        <br/>
+        <br/>
+        <center><h1>用户信息</h1></center><br/>
+    <br/><br/>
+    <form action="register.do" method="POST">
+    <span>学号: <input onmouseout = "SnoCheck()"  id="Sno"  type="text" name="Sno" /><p id="1"></p><br/><br/></span>
+    <span>账号: <input onmouseout = "UserCheck()" id="User" type="text" name="LoginUser" ></input><p id="2"></p><br/><br/></span>
+    <span>密码: <input onmouseout = "PassCheck()" id="Pass" type="password" name="LoginPass" ></input><br/><br/><p id="3"></p></span>
+    <span style="margin-left: 218px;">确认密码: <input onmouseout = "PassTwoCheck()" id = "PassTwo" type="password" name="PassTwo" ></input><br/><br/><p id="4"></p></span>
+   <br/><br/><br/> 
+    <span><input id = "submit" disabled style="width: 452px;color: #fff;background: #999;" type="submit" value="立即注册"/></span>
+    </form>
+    </div>
+</body>
+</html>

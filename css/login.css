@@ -1,0 +1,16 @@
+form{
+    margin: 200px 500px;
+    width: 210px;
+    height: 100px;
+    color: lightslategray;
+}
+
+form input{
+    background-color: #becdee;
+    width: 200px;
+    height: 20px;
+}
+
+form span{
+    text-align: center;
+}
