@@ -24,7 +24,7 @@ public class MyContextListener implements ServletContextListener {
 		String user = sc.getInitParameter("user");
 		String pass = sc.getInitParameter("pass");
 		try{
-			Class.forName(driver);//¼ÓÔØÇı¶¯³ÌĞòÀà
+			Class.forName(driver);//åŠ è½½é©±åŠ¨ç¨‹åºç±», é«˜ç‰ˆæœ¬jdbcå¯ä»¥çœå», ç›¸å…³å¯è‡ªè¡Œç™¾åº¦
 			Connection conn = DriverManager.getConnection(url, user, pass);
 			sc.setAttribute("conn", conn);
 			System.out.println("Connect Succeed!");
